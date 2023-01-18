@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3c43b27e45e7f2a4b92ca1325db38958
+guid: 4d5a18c90fa0e29469335fc511b75bc4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -127,7 +127,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 2023_01_17_0qb_Kleki_0
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 68
+        width: 249
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 36, y: 0, z: 0, w: 8}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879bc22eeebbadc4bb75a410a4504139
+      internalID: -1951237429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023_01_17_0qb_Kleki_1
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 81
+        width: 177
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 14, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ae472871b0b7f4989422877dbbd934
+      internalID: 359124307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023_01_17_0qb_Kleki_2
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 95
+        width: 109
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 4, y: 0, z: 0, w: 21}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d8e4735d239b640bfb3f070ee747b2
+      internalID: 1432665986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +201,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      2023_01_17_0qb_Kleki_1: 359124307
+      2023_01_17_0qb_Kleki_0: -1951237429
+      2023_01_17_0qb_Kleki_2: 1432665986
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
