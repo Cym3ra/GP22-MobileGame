@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 43622598}
   - component: {fileID: 43622597}
   m_Layer: 0
-  m_Name: Plant4
+  m_Name: 2023_01_17_10k_Kleki_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 63490871}
   - component: {fileID: 63490870}
   m_Layer: 0
-  m_Name: Plant2
+  m_Name: 2023_01_17_10k_Kleki_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 103258230}
   - component: {fileID: 103258229}
   m_Layer: 0
-  m_Name: Plant6
+  m_Name: 2023_01_17_10k_Kleki_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 139853090}
   - component: {fileID: 139853089}
   m_Layer: 0
-  m_Name: Pot3
+  m_Name: 2023_01_17_10k_Kleki_29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -890,7 +890,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140530633
 GameObject:
@@ -905,7 +905,7 @@ GameObject:
   - component: {fileID: 140530635}
   - component: {fileID: 140530634}
   m_Layer: 0
-  m_Name: Plant10
+  m_Name: 2023_01_17_10k_Kleki_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 206797870}
   - component: {fileID: 206797869}
   m_Layer: 0
-  m_Name: Plant7
+  m_Name: 2023_01_17_10k_Kleki_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1155,7 +1155,7 @@ GameObject:
   - component: {fileID: 208021389}
   - component: {fileID: 208021388}
   m_Layer: 0
-  m_Name: Plant11
+  m_Name: 2023_01_17_10k_Kleki_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1532,7 +1532,7 @@ GameObject:
   - component: {fileID: 236627645}
   - component: {fileID: 236627644}
   m_Layer: 0
-  m_Name: Plant15
+  m_Name: 2023_01_17_10k_Kleki_33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1642,7 +1642,7 @@ Transform:
   m_Children:
   - {fileID: 1773998538}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &264802578
 GameObject:
@@ -1741,7 +1741,7 @@ GameObject:
   - component: {fileID: 289490495}
   - component: {fileID: 289490494}
   m_Layer: 0
-  m_Name: Plant5
+  m_Name: 2023_01_17_10k_Kleki_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1950,7 +1950,7 @@ GameObject:
   - component: {fileID: 364650153}
   - component: {fileID: 364650152}
   m_Layer: 0
-  m_Name: Plant3
+  m_Name: 2023_01_17_10k_Kleki_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2243,7 +2243,7 @@ GameObject:
   - component: {fileID: 497526993}
   - component: {fileID: 497526992}
   m_Layer: 0
-  m_Name: Plant1
+  m_Name: 2023_01_17_10k_Kleki_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2777,7 +2777,7 @@ GameObject:
   - component: {fileID: 563666511}
   - component: {fileID: 563666510}
   m_Layer: 0
-  m_Name: Pot6
+  m_Name: 2023_01_17_10k_Kleki_35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2901,7 +2901,7 @@ GameObject:
   - component: {fileID: 594524974}
   - component: {fileID: 594524973}
   m_Layer: 0
-  m_Name: Pot
+  m_Name: 2023_01_17_10k_Kleki_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3010,7 +3010,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &605474308
 GameObject:
@@ -3057,7 +3057,7 @@ GameObject:
   - component: {fileID: 637548613}
   - component: {fileID: 637548612}
   m_Layer: 0
-  m_Name: Pot5
+  m_Name: 2023_01_17_10k_Kleki_32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3166,7 +3166,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670936191
 GameObject:
@@ -3665,7 +3665,7 @@ GameObject:
   - component: {fileID: 833900528}
   - component: {fileID: 833900527}
   m_Layer: 0
-  m_Name: Plant8
+  m_Name: 2023_01_17_10k_Kleki_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4167,7 +4167,7 @@ GameObject:
   - component: {fileID: 1099821178}
   - component: {fileID: 1099821177}
   m_Layer: 0
-  m_Name: Pot4
+  m_Name: 2023_01_17_10k_Kleki_30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4276,7 +4276,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181847412
 GameObject:
@@ -4919,7 +4919,7 @@ GameObject:
   - component: {fileID: 1403108849}
   - component: {fileID: 1403108848}
   m_Layer: 0
-  m_Name: Plant14
+  m_Name: 2023_01_17_10k_Kleki_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5029,7 +5029,7 @@ Transform:
   m_Children:
   - {fileID: 1491614657}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1443376946
 GameObject:
@@ -5044,7 +5044,7 @@ GameObject:
   - component: {fileID: 1443376948}
   - component: {fileID: 1443376947}
   m_Layer: 0
-  m_Name: Plant9
+  m_Name: 2023_01_17_10k_Kleki_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5401,7 +5401,7 @@ GameObject:
   - component: {fileID: 1524921642}
   - component: {fileID: 1524921641}
   m_Layer: 0
-  m_Name: Pot
+  m_Name: 2023_01_17_10k_Kleki_26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5510,7 +5510,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1527259617
 GameObject:
@@ -5714,7 +5714,7 @@ GameObject:
   - component: {fileID: 1592982655}
   - component: {fileID: 1592982654}
   m_Layer: 0
-  m_Name: Plant16
+  m_Name: 2023_01_17_10k_Kleki_34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5824,7 +5824,7 @@ Transform:
   m_Children:
   - {fileID: 383581838}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618618790
 GameObject:
@@ -6388,7 +6388,7 @@ GameObject:
   - component: {fileID: 1959024122}
   - component: {fileID: 1959024121}
   m_Layer: 0
-  m_Name: Pot2
+  m_Name: 2023_01_17_10k_Kleki_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6497,7 +6497,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1976717612
 GameObject:
@@ -6512,7 +6512,7 @@ GameObject:
   - component: {fileID: 1976717614}
   - component: {fileID: 1976717613}
   m_Layer: 0
-  m_Name: Plant12
+  m_Name: 2023_01_17_10k_Kleki_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7000,7 +7000,7 @@ GameObject:
   - component: {fileID: 2105487275}
   - component: {fileID: 2105487274}
   m_Layer: 0
-  m_Name: Plant13
+  m_Name: 2023_01_17_10k_Kleki_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7103,14 +7103,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105487273}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.79, y: -3.3199997, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.79, y: -3.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1898084142}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2107410614
 GameObject:
