@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://plantastic-330cb-default-rtdb.europe-west1.firebasedatabase.app</string>
+  <string name="gcm_defaultSenderId" translatable="false">852531727640</string>
+  <string name="google_storage_bucket" translatable="false">plantastic-330cb.appspot.com</string>
+  <string name="project_id" translatable="false">plantastic-330cb</string>
+  <string name="google_api_key" translatable="false">AIzaSyDi5XdBPEgsUsOh3s8P4uwfRYjEDDDqoFw</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDi5XdBPEgsUsOh3s8P4uwfRYjEDDDqoFw</string>
+  <string name="google_app_id" translatable="false">1:852531727640:android:1316f72e91cf51cb86a26d</string>
+  <string name="default_web_client_id" translatable="false">852531727640-e12d8ubj5cgi0e0a2hm8p0vfmchhmcb7.apps.googleusercontent.com</string>
+</resources>
