@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "852531727640",
+    "firebase_url": "https://plantastic-330cb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "plantastic-330cb",
+    "storage_bucket": "plantastic-330cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852531727640:android:1316f72e91cf51cb86a26d",
+        "android_client_info": {
+          "package_name": "com.Yrgo.Plantastic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852531727640-e12d8ubj5cgi0e0a2hm8p0vfmchhmcb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi5XdBPEgsUsOh3s8P4uwfRYjEDDDqoFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852531727640-e12d8ubj5cgi0e0a2hm8p0vfmchhmcb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
