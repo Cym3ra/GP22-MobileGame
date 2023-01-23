@@ -13,6 +13,10 @@
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
+FirebaseCppApp-10_3_0.bundle
+
+google-services.json
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 [Mm]emoryCaptures/
