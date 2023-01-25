@@ -136,8 +136,8 @@ TextureImporter:
         y: 134
         width: 59
         height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 10, y: 0, z: 0, w: 7}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: 2023_01_13_0nw_Kleki_1
       rect:
         serializedVersion: 2
-        x: 855
+        x: 856
         y: 139
         width: 32
         height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,8 +178,8 @@ TextureImporter:
         y: 146
         width: 32
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 8, y: 0, z: 0, w: 4}
       outline: []
       physicsShape: []

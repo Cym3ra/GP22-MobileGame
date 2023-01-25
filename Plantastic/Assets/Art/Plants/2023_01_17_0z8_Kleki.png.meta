@@ -136,8 +136,8 @@ TextureImporter:
         y: 34
         width: 174
         height: 287
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 8}
       outline: []
       physicsShape: []
@@ -157,8 +157,8 @@ TextureImporter:
         y: 37
         width: 120
         height: 206
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 9, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,8 +178,8 @@ TextureImporter:
         y: 39
         width: 89
         height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 10, y: 0, z: 1, w: 3}
       outline: []
       physicsShape: []
@@ -187,6 +187,27 @@ TextureImporter:
       bones: []
       spriteID: 2386dc48547fda04e88ee20566b05f42
       internalID: 583998159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2023_01_17_0z8_Kleki_3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 848
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d66b7cff59e47240b0682180f117ae8
+      internalID: -852942604
       vertices: []
       indices: 
       edges: []
@@ -202,6 +223,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      2023_01_17_0z8_Kleki_3: -852942604
       2023_01_17_0z8_Kleki_0: 110379396
       2023_01_17_0z8_Kleki_1: -1670101133
       2023_01_17_0z8_Kleki_2: 583998159
