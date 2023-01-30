@@ -1889,10 +1889,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 3204449603720263191, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
 --- !u!1 &220664157

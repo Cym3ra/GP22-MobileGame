@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 3204449603720263184}
   - component: {fileID: 3204449603720263187}
   - component: {fileID: 3204449603720263186}
+  - component: {fileID: 1004170806}
   m_Layer: 5
   m_Name: PlantPanel
   m_TagString: Untagged
@@ -609,6 +610,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1004170806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3204449603720263191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c548bff3a2192d479e8c06e29daace8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterButton: {fileID: 3204449603514790213}
+  harvestButton: {fileID: 3204449604492039310}
+  radialImage: {fileID: 4968966235730201353}
 --- !u!1 &3204449604161928258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1130,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 452f681fcc69a0d408b78f6e9cc1ffa1, type: 3}
+--- !u!114 &4968966235730201353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7533727887038581345, guid: 452f681fcc69a0d408b78f6e9cc1ffa1, type: 3}
+  m_PrefabInstance: {fileID: 3204449604501782888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4968966235730201354 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7533727887038581346, guid: 452f681fcc69a0d408b78f6e9cc1ffa1, type: 3}
