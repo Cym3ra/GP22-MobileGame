@@ -1889,6 +1889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3204449603720263191, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
 --- !u!1 &220664157
@@ -8143,6 +8147,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998340623}
   m_CullTransparentMesh: 1
+--- !u!1 &1004170802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3204449603720263191, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
+  m_PrefabInstance: {fileID: 209105275}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1004170803 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3204449603720263184, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
@@ -18078,6 +18087,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 728574677114177479, guid: 48012112eced232418138d7d33b11fd3, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48012112eced232418138d7d33b11fd3, type: 3}
 --- !u!1001 &2041348160726230303
@@ -18087,6 +18100,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 2041348160932543411, guid: ed7790df5d28ee74aada88edda8d41b6, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 2041348160932543412, guid: ed7790df5d28ee74aada88edda8d41b6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -18144,6 +18161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 2543518042976155060, guid: 93c8b1a415250d9428353e86658bed30, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 2543518042976155083, guid: 93c8b1a415250d9428353e86658bed30, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -18217,6 +18238,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 3266593078641404130, guid: ae84a6afb20ac6449acbfdedd6a96948, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 3266593078641404153, guid: ae84a6afb20ac6449acbfdedd6a96948, type: 3}
       propertyPath: m_Name
       value: Plant11
@@ -18274,6 +18299,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 3664347170574697036, guid: 7d9a13a4cf3ff2441aae877bb2d49ab4, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 3664347170574697037, guid: 7d9a13a4cf3ff2441aae877bb2d49ab4, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -18335,6 +18364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant5
       objectReference: {fileID: 0}
+    - target: {fileID: 4041787866892954433, guid: 56fafeb908e8ccd47bccf2406c586b73, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 4041787866892954434, guid: 56fafeb908e8ccd47bccf2406c586b73, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -18436,6 +18469,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5815817380376939889, guid: aafae674399d79e48a1a00241010aa62, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aafae674399d79e48a1a00241010aa62, type: 3}
 --- !u!1001 &5880164667412472571
@@ -18445,6 +18482,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 5880164666425908857, guid: f65ce145534f34241a1d566bdc889c95, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 5880164666425908858, guid: f65ce145534f34241a1d566bdc889c95, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -18502,6 +18543,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 6031043596908906204, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -18559,6 +18604,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 6350803225979649364, guid: e3a4d41e0c554784fa087be249883bf9, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 6350803225979649365, guid: e3a4d41e0c554784fa087be249883bf9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -18660,6 +18709,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6573653644856160915, guid: f228db4b947a42c429632b15f4fa6e36, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 6573653644856160924, guid: f228db4b947a42c429632b15f4fa6e36, type: 3}
       propertyPath: m_Name
       value: Plant2
@@ -18721,6 +18774,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7549617268217044541, guid: 1998ddedf4944d643a9d772af3b45b1b, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1998ddedf4944d643a9d772af3b45b1b, type: 3}
 --- !u!1001 &7930823413976201340
@@ -18774,6 +18831,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7930823413835672498, guid: 2494746025e8ae049a285e48c7560ef3, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 7930823413835672501, guid: 2494746025e8ae049a285e48c7560ef3, type: 3}
       propertyPath: m_Name
       value: Plant10
@@ -18791,6 +18852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant12
       objectReference: {fileID: 0}
+    - target: {fileID: 8222362144330138072, guid: d0ea1cfb6635dae40b90f425e7c0637f, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 8222362144330138073, guid: d0ea1cfb6635dae40b90f425e7c0637f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -18844,6 +18909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 21420613}
     m_Modifications:
+    - target: {fileID: 8820004980451970617, guid: be5418600c64fe841b8473754775e355, type: 3}
+      propertyPath: plantPanel
+      value: 
+      objectReference: {fileID: 1004170802}
     - target: {fileID: 8820004980451970619, guid: be5418600c64fe841b8473754775e355, type: 3}
       propertyPath: m_RootOrder
       value: 12

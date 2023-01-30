@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5815817380376939884}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.58, y: -1.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -144,6 +144,7 @@ MonoBehaviour:
   - {fileID: 930696420, guid: a27385ea9ff6a0947a2e66c5f60d7db0, type: 3}
   plant: {fileID: 5815817380644385369}
   waterButton: {fileID: 0}
+  plantPanel: {fileID: 0}
   plantStage: 0
   wateringPressed: 0
 --- !u!1 &5815817380644385367

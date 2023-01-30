@@ -9,6 +9,7 @@ public class PlantManager : MonoBehaviour
     [SerializeField] Sprite[] plantStages;
     [SerializeField] SpriteRenderer plant;
     [SerializeField] Button waterButton;
+    [SerializeField] GameObject plantPanel;
 
     public int plantStage = 0;
     public int wateringPressed = 0;
@@ -30,6 +31,7 @@ public class PlantManager : MonoBehaviour
     private void OnMouseDown()
     {
         //waterButton.gameObject.SetActive(true);
+        plantPanel.SetActive(true);
     }
 
     private void PlantInteraction(int watered)

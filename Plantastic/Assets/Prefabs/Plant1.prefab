@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 9192620195631390504}
   - component: {fileID: 9192620195631390505}
   - component: {fileID: 6031043596908906204}
-  - component: {fileID: 6031043596979043000}
   m_Layer: 0
   m_Name: Plant1
   m_TagString: Untagged
@@ -112,7 +111,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9192620195631390518}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.76, y: -2.92, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
@@ -229,25 +228,6 @@ MonoBehaviour:
   - {fileID: 1699287195, guid: 67b6c1cfd2a17fd43841baaf34ebb834, type: 3}
   plant: {fileID: 9192620195594080059}
   waterButton: {fileID: 0}
-  plantStage: 0
-  wateringPressed: 0
---- !u!114 &6031043596979043000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9192620195631390518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7416365009be00b4e9665954267b4b75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plantStages:
-  - {fileID: -239712894, guid: 67b6c1cfd2a17fd43841baaf34ebb834, type: 3}
-  - {fileID: -863837008, guid: 67b6c1cfd2a17fd43841baaf34ebb834, type: 3}
-  - {fileID: 1699287195, guid: 67b6c1cfd2a17fd43841baaf34ebb834, type: 3}
-  plant: {fileID: 9192620195594080059}
-  waterButton: {fileID: 0}
+  plantPanel: {fileID: 0}
   plantStage: 0
   wateringPressed: 0
