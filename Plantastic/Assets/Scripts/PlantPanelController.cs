@@ -10,6 +10,7 @@ public class PlantPanelController : MonoBehaviour
     [SerializeField] Button harvestButton;
     [SerializeField] Image radialImage;
 
+    public PlantManager currentPlant;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class PlantPanelController : MonoBehaviour
 
     public void WateringInput()
     {
-
+        currentPlant.Watering();
     }
 
     public void HarvestInput()

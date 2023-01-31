@@ -8,7 +8,6 @@ public class PlantManager : MonoBehaviour
 
     [SerializeField] Sprite[] plantStages;
     [SerializeField] SpriteRenderer plant;
-    [SerializeField] Button waterButton;
     [SerializeField] GameObject plantPanel;
 
     public int plantStage = 0;
@@ -16,22 +15,21 @@ public class PlantManager : MonoBehaviour
     float timeBetweenStages = 2f;
     float timer;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         //timer -= Time.deltaTime;
+
     }
 
     private void OnMouseDown()
     {
-        //waterButton.gameObject.SetActive(true);
         plantPanel.SetActive(true);
+        plantPanel.GetComponent<PlantPanelController>().currentPlant = this;
     }
 
     private void PlantInteraction(int watered)
