@@ -30,6 +30,6 @@ public class PlantPanelController : MonoBehaviour
 
     public void HarvestInput()
     {
-
+        currentPlant.HarvestPlant();
     }
 }

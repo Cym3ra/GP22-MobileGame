@@ -10,6 +10,8 @@ public class PlantManager : MonoBehaviour
     [SerializeField] SpriteRenderer plant;
     [SerializeField] GameObject plantPanel;
 
+    public int harvestLeavesAmount;
+    public int harvestFlowersAmount;
     public int plantStage = 0;
     public int wateringPressed = 0;
     float timeBetweenStages = 2f;
@@ -30,6 +32,11 @@ public class PlantManager : MonoBehaviour
     {
         plantPanel.SetActive(true);
         plantPanel.GetComponent<PlantPanelController>().currentPlant = this;
+    }
+
+    public void Watering()
+    {
+        PlantInteraction(1);
     }
 
     private void PlantInteraction(int watered)
@@ -55,13 +62,14 @@ public class PlantManager : MonoBehaviour
         }
     }
 
-    public void Watering()
-    {
-        PlantInteraction(1);
-    }
-
     private void UpdatePlantStage()
     {
         plant.sprite = plantStages[plantStage];
+    }
+
+    public void HarvestPlant()
+    {
+        CurrencyManager.instance.IncreaseLeaves(harvestLeavesAmount);
+        CurrencyManager.instance.IncreaseFlowers(harvestFlowersAmount);
     }
 }
