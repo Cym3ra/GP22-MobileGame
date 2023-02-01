@@ -42,7 +42,6 @@ public class PlantManager : MonoBehaviour
             {
                 plantStage++;
                 UpdatePlantStage();
-                Debug.Log("First");
             }
         }
 
@@ -52,7 +51,6 @@ public class PlantManager : MonoBehaviour
             {
                 plantStage++;
                 UpdatePlantStage();
-                Debug.Log("Second");
             }
         }
     }
