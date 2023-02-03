@@ -14,7 +14,13 @@ public class CurrencyManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+            
+            instance = this;
     }
 
     public void IncreaseLeaves(int amount)
@@ -26,6 +32,18 @@ public class CurrencyManager : MonoBehaviour
     public void IncreaseFlowers(int amount)
     {
         flowerAmounts += amount;
+        flowersText.text = "x" + flowerAmounts;
+    }
+
+    public void DecreaseLeaves(int amount)
+    {
+        leavesAmount -= amount;
+        leavesText.text = "x" + leavesAmount;
+    }
+
+    public void DecreaseFlowers(int amount)
+    {
+        flowerAmounts -= amount;
         flowersText.text = "x" + flowerAmounts;
     }
 }

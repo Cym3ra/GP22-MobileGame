@@ -527,7 +527,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3204449603514790214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1004170806}
+        m_TargetAssemblyTypeName: PlantPanelController, Assembly-CSharp
+        m_MethodName: WateringInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3204449603720263191
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +558,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3204449603720263184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -625,6 +637,7 @@ MonoBehaviour:
   waterButton: {fileID: 3204449603514790213}
   harvestButton: {fileID: 3204449604492039310}
   radialImage: {fileID: 4968966235730201353}
+  currentPlant: {fileID: 0}
 --- !u!1 &3204449604161928258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +1033,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3204449604492039311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1004170806}
+        m_TargetAssemblyTypeName: PlantPanelController, Assembly-CSharp
+        m_MethodName: HarvestInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &3204449604501782888
 PrefabInstance:
   m_ObjectHideFlags: 0
