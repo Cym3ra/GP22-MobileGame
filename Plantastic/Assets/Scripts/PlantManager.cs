@@ -24,7 +24,8 @@ public class PlantManager : MonoBehaviour
     }
     private void Start()
     {
-        plantPanel.gameObject.SetActive(false);
+        //plantPanel.gameObject.SetActive(false);
+
     }
 
     void Update()
@@ -35,7 +36,8 @@ public class PlantManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        plantPanel.gameObject.SetActive(true);
+        plantPanel.GetComponent<CanvasGroup>().enabled = false;
+        //plantPanel.gameObject.SetActive(true);
         plantPanel.GetComponent<PlantPanelController>().currentPlant = this;
     }
 
