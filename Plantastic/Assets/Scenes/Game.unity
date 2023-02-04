@@ -167,7 +167,7 @@ Transform:
   - {fileID: 236627647}
   - {fileID: 1592982657}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30363638
 GameObject:
@@ -213,7 +213,7 @@ Transform:
   - {fileID: 2049623903}
   - {fileID: 2111203633}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &36347587
 GameObject:
@@ -787,7 +787,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &206797870 stripped
 MonoBehaviour:
@@ -828,6 +828,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1769942559}
     m_Modifications:
+    - target: {fileID: 1004170806, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
+      propertyPath: currentPlant
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3204449603720263184, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -915,6 +919,10 @@ PrefabInstance:
     - target: {fileID: 3204449603720263191, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
       propertyPath: m_Name
       value: PlantPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3204449603720263191, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
@@ -1732,7 +1740,7 @@ Transform:
   - {fileID: 1211500420}
   - {fileID: 598763084}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &793172606
 GameObject:
@@ -3463,7 +3471,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456933062
 GameObject:
@@ -3850,6 +3858,63 @@ Transform:
   m_Father: {fileID: 30363639}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1625029150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5389357
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3601863
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192620195631390518, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
+      propertyPath: m_Name
+      value: Plant1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
 --- !u!1 &1701208708
 GameObject:
   m_ObjectHideFlags: 0
@@ -3989,7 +4054,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769942555
 GameObject:
@@ -4088,7 +4153,7 @@ RectTransform:
   - {fileID: 1135787858}
   - {fileID: 1445264001}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4211,17 +4276,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1960770803 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3204449603514790213, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
-  m_PrefabInstance: {fileID: 209105275}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1976717614 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8222362144330138055, guid: d0ea1cfb6635dae40b90f425e7c0637f, type: 3}
@@ -4713,10 +4767,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 728574677114177479, guid: 48012112eced232418138d7d33b11fd3, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48012112eced232418138d7d33b11fd3, type: 3}
 --- !u!1001 &2041348160726230303
@@ -4730,10 +4780,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 2041348160932543411, guid: ed7790df5d28ee74aada88edda8d41b6, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 2041348160932543412, guid: ed7790df5d28ee74aada88edda8d41b6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4795,10 +4841,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 2543518042976155060, guid: 93c8b1a415250d9428353e86658bed30, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 2543518042976155083, guid: 93c8b1a415250d9428353e86658bed30, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -4876,10 +4918,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 3266593078641404130, guid: ae84a6afb20ac6449acbfdedd6a96948, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 3266593078641404153, guid: ae84a6afb20ac6449acbfdedd6a96948, type: 3}
       propertyPath: m_Name
       value: Plant11
@@ -4941,10 +4979,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 3664347170574697036, guid: 7d9a13a4cf3ff2441aae877bb2d49ab4, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 3664347170574697037, guid: 7d9a13a4cf3ff2441aae877bb2d49ab4, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5010,21 +5044,17 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 4041787866892954433, guid: 56fafeb908e8ccd47bccf2406c586b73, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 4041787866892954434, guid: 56fafeb908e8ccd47bccf2406c586b73, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4041787866892954434, guid: 56fafeb908e8ccd47bccf2406c586b73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.49
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 4041787866892954434, guid: 56fafeb908e8ccd47bccf2406c586b73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.71
+      value: -4.2
       objectReference: {fileID: 0}
     - target: {fileID: 4041787866892954434, guid: 56fafeb908e8ccd47bccf2406c586b73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5119,10 +5149,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 5815817380376939889, guid: aafae674399d79e48a1a00241010aa62, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aafae674399d79e48a1a00241010aa62, type: 3}
 --- !u!1001 &5880164667412472571
@@ -5136,10 +5162,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 5880164666425908857, guid: f65ce145534f34241a1d566bdc889c95, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 5880164666425908858, guid: f65ce145534f34241a1d566bdc889c95, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -5201,14 +5223,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 6031043596908906204, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
-    - target: {fileID: 6031043596908906204, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
-      propertyPath: harvestLeavesAmount
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 9192620195631390506, guid: c3adadd32ed850d418f1c41108e2dd3b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5270,10 +5284,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 6350803225979649364, guid: e3a4d41e0c554784fa087be249883bf9, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 6350803225979649365, guid: e3a4d41e0c554784fa087be249883bf9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5379,10 +5389,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 6573653644856160915, guid: f228db4b947a42c429632b15f4fa6e36, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 6573653644856160924, guid: f228db4b947a42c429632b15f4fa6e36, type: 3}
       propertyPath: m_Name
       value: Plant2
@@ -5448,10 +5454,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 7549617268217044541, guid: 1998ddedf4944d643a9d772af3b45b1b, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1998ddedf4944d643a9d772af3b45b1b, type: 3}
 --- !u!1001 &7930823413976201340
@@ -5509,10 +5511,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 7930823413835672498, guid: 2494746025e8ae049a285e48c7560ef3, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 7930823413835672501, guid: 2494746025e8ae049a285e48c7560ef3, type: 3}
       propertyPath: m_Name
       value: Plant10
@@ -5534,10 +5532,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 8222362144330138072, guid: d0ea1cfb6635dae40b90f425e7c0637f, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
     - target: {fileID: 8222362144330138073, guid: d0ea1cfb6635dae40b90f425e7c0637f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5595,14 +5589,6 @@ PrefabInstance:
       propertyPath: plantPanel
       value: 
       objectReference: {fileID: 1004170802}
-    - target: {fileID: 8820004980451970617, guid: be5418600c64fe841b8473754775e355, type: 3}
-      propertyPath: waterButton
-      value: 
-      objectReference: {fileID: 1960770803}
-    - target: {fileID: 8820004980451970617, guid: be5418600c64fe841b8473754775e355, type: 3}
-      propertyPath: harvestFlowersAmount
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8820004980451970619, guid: be5418600c64fe841b8473754775e355, type: 3}
       propertyPath: m_RootOrder
       value: 12

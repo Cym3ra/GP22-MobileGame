@@ -143,8 +143,9 @@ MonoBehaviour:
   - {fileID: 129851140, guid: ff5d919318e91e34c938a1d250b7c815, type: 3}
   - {fileID: -163028923, guid: ff5d919318e91e34c938a1d250b7c815, type: 3}
   plant: {fileID: 6573653645246779789}
-  waterButton: {fileID: 0}
   plantPanel: {fileID: 0}
+  harvestLeavesAmount: 0
+  harvestFlowersAmount: 0
   plantStage: 0
   wateringPressed: 0
 --- !u!1 &6573653645246779787
