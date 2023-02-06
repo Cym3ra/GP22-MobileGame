@@ -14,8 +14,8 @@ public class PlantManager : MonoBehaviour
     public int harvestFlowersAmount;
     public int plantStage = 0;
     public int wateringPressed = 0;
-    float timeBetweenStages = 2f;
-    float timer;
+    public float timeToHarvest = 10f;
+    public float timer;
 
     void Awake()
     {
@@ -26,12 +26,12 @@ public class PlantManager : MonoBehaviour
     {
         //plantPanel.gameObject.SetActive(false);
 
+
     }
 
     void Update()
     {
-        //timer -= Time.deltaTime;
-
+        CountDown(plantPanel.GetComponent<PlantPanelController>().timerImage);
     }
 
     private void OnMouseDown()
@@ -44,6 +44,7 @@ public class PlantManager : MonoBehaviour
     public void Watering()
     {
         PlantInteraction(1);
+        timer = timeToHarvest;
     }
 
     private void PlantInteraction(int watered)
@@ -78,5 +79,18 @@ public class PlantManager : MonoBehaviour
     {
         CurrencyManager.instance.IncreaseLeaves(harvestLeavesAmount);
         CurrencyManager.instance.IncreaseFlowers(harvestFlowersAmount);
+    }
+
+    public void CountDown(Image fillImage)
+    {
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+            fillImage.fillAmount = timer / timeToHarvest;
+        }
+        if (timer < 0)
+        {
+            timer = 0;
+        }
     }
 }

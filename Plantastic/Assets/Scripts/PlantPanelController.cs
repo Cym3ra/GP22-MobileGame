@@ -8,7 +8,7 @@ public class PlantPanelController : MonoBehaviour
 
     [SerializeField] Button waterButton;
     [SerializeField] Button harvestButton;
-    [SerializeField] Image radialImage;
+    public Image timerImage;
 
     public PlantManager currentPlant;
 
@@ -20,12 +20,13 @@ public class PlantPanelController : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     public void WateringInput()
     {
         currentPlant.Watering();
+        currentPlant.CountDown(timerImage);
     }
 
     public void HarvestInput()
