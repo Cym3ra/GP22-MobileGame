@@ -13,7 +13,10 @@ public class SpawnPlant : MonoBehaviour
 
     public void SpawnPlantFromIndex(int index)
     {
-        Instantiate(plantList[index], Vector3.zero, Quaternion.identity);
+        //Instantiate(plantList[index], Vector3.zero, Quaternion.identity);
+        Vector2 spawnPoint = new Vector2(0, 0);
+        plantList[index].gameObject.transform.position = spawnPoint;
+        
     }
 
 }
