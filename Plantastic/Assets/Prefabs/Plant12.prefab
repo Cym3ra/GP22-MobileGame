@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8222362144191289438}
   - component: {fileID: 8222362144191289425}
+  - component: {fileID: 936028957}
   m_Layer: 0
   m_Name: SmallLeaves
   m_TagString: Untagged
@@ -84,6 +85,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &936028957
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8222362144191289439}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.034333497, y: 0.5933333}
+  m_SpriteTilingProperty:
+    border: {x: 0.046666667, y: 0.026666667, z: 0, w: 0.013333334}
+    pivot: {x: 0.55, y: 0}
+    oldSize: {x: 0.68666667, y: 1.1866666}
+    newSize: {x: 1.4733334, y: 3.02}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.68666667, y: 1.1866666}
+  m_EdgeRadius: 0
 --- !u!1 &8222362144330138053
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,6 +124,7 @@ GameObject:
   - component: {fileID: 8222362144330138055}
   - component: {fileID: 8222362144330138052}
   - component: {fileID: 8222362144330138072}
+  - component: {fileID: 1976717620}
   m_Layer: 0
   m_Name: Plant12
   m_TagString: Untagged
@@ -232,3 +260,26 @@ MonoBehaviour:
   harvestFlowersAmount: 0
   plantStage: 0
   wateringPressed: 0
+  timeToHarvest: 10
+  timer: 0
+--- !u!50 &1976717620
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8222362144330138053}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

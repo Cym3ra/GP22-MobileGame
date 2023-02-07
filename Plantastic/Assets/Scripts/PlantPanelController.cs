@@ -26,7 +26,6 @@ public class PlantPanelController : MonoBehaviour
     public void WateringInput()
     {
         currentPlant.Watering();
-        currentPlant.CountDown(timerImage);
     }
 
     public void HarvestInput()

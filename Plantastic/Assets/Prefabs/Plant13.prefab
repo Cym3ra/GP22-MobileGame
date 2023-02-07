@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8820004980451970620}
   - component: {fileID: 8820004980451970616}
   - component: {fileID: 8820004980451970617}
+  - component: {fileID: 2105487282}
   m_Layer: 0
   m_Name: Plant13
   m_TagString: Untagged
@@ -161,6 +162,29 @@ MonoBehaviour:
   harvestFlowersAmount: 4
   plantStage: 0
   wateringPressed: 0
+  timeToHarvest: 10
+  timer: 0
+--- !u!50 &2105487282
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8820004980451970623}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8820004980658886330
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,6 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8820004980658886328}
   - component: {fileID: 8820004980658886331}
+  - component: {fileID: 175879131}
   m_Layer: 0
   m_Name: RedFlower
   m_TagString: Untagged
@@ -245,3 +270,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &175879131
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8820004980658886330}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.059333503, y: 0.50333333}
+  m_SpriteTilingProperty:
+    border: {x: 0.06666667, y: 0, z: 0.006666667, w: 0.02}
+    pivot: {x: 0.4, y: 0}
+    oldSize: {x: 0.5933333, y: 1.0066667}
+    newSize: {x: 1.74, y: 2.87}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5933333, y: 1.0066667}
+  m_EdgeRadius: 0

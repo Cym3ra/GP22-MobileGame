@@ -8,8 +8,9 @@ public class PlantManager : MonoBehaviour
 
     [SerializeField] Sprite[] plantStages;
     [SerializeField] SpriteRenderer plant;
-    public GameObject plantPanel;
+    BoxCollider2D plantCollider;
 
+    public GameObject plantPanel;
     public int harvestLeavesAmount;
     public int harvestFlowersAmount;
     public int plantStage = 0;
@@ -24,9 +25,8 @@ public class PlantManager : MonoBehaviour
     }
     private void Start()
     {
-        //plantPanel.gameObject.SetActive(false);
-
-
+        plantCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        timer = timeToHarvest;
     }
 
     void Update()
@@ -37,14 +37,12 @@ public class PlantManager : MonoBehaviour
     private void OnMouseDown()
     {
         plantPanel.GetComponent<CanvasGroup>().enabled = false;
-        //plantPanel.gameObject.SetActive(true);
         plantPanel.GetComponent<PlantPanelController>().currentPlant = this;
     }
 
     public void Watering()
     {
         PlantInteraction(1);
-        timer = timeToHarvest;
     }
 
     private void PlantInteraction(int watered)
@@ -73,6 +71,8 @@ public class PlantManager : MonoBehaviour
     private void UpdatePlantStage()
     {
         plant.sprite = plantStages[plantStage];
+        plantCollider.size = plant.sprite.bounds.size;
+        plantCollider.offset = new Vector2(0, plant.bounds.size.y / 2);
     }
 
     public void HarvestPlant()
