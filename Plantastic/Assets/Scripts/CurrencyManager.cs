@@ -2,6 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Firebase.Database;
+using System;
+
+
+[Serializable]
+public class CurrencyAmount
+{
+    public string leavesCurrency;
+    public string flowersCurrency;
+}
 
 public class CurrencyManager : MonoBehaviour
 {
@@ -21,6 +31,14 @@ public class CurrencyManager : MonoBehaviour
         else
             
             instance = this;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SaveCurrency();
+        }
     }
 
     public void IncreaseLeaves(int amount)
@@ -45,5 +63,16 @@ public class CurrencyManager : MonoBehaviour
     {
         flowerAmounts -= amount;
         flowersText.text = "x" + flowerAmounts;
+    }
+
+    public void SaveCurrency()
+    {
+        CurrencyAmount totalCurrency = new CurrencyAmount();
+        totalCurrency.leavesCurrency = leavesText.text;
+        totalCurrency.flowersCurrency = flowersText.text;
+
+        string jsonString = JsonUtility.ToJson(totalCurrency);
+        string path = "users/" + FirebaseSignIn.Instance.GetUserID;
+        FirebaseSaveManager.Instance.SaveData(path, jsonString);
     }
 }
