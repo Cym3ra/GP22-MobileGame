@@ -111,7 +111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79, y: -50.3}
+  m_AnchoredPosition: {x: 84, y: -50.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3575328674293493886
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 18
   buyButton: {fileID: 3575328674635454837}
 --- !u!1 &3575328674462804385
 GameObject:
@@ -655,7 +655,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328674462804386}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328674463236410
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +953,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328674488457448}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328674506760669
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1044,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1131,7 +1179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1495,7 +1543,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x15
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1630,7 +1678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2339,7 +2387,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328674635454836}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 13
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseFlowers
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 18
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328674638599766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,7 +2479,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f39e4f7ed4acd8c45a80468b37278b80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f753df1cf7fe2a1458d8d9e78ee58d84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2538,7 +2610,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328674658248330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 16
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328674704690117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,7 +2804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 10
   buyButton: {fileID: 3575328675275993531}
 --- !u!1 &3575328674737001173
 GameObject:
@@ -2929,7 +3025,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3091,7 +3187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 5
   buyButton: {fileID: 3575328676375034737}
 --- !u!1 &3575328674877972292
 GameObject:
@@ -3186,7 +3282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 15
   buyButton: {fileID: 3575328675214764658}
 --- !u!1 &3575328674886340951
 GameObject:
@@ -3541,8 +3637,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1240879428, guid: 4e843ea66ae049147812f7a7742d76e7, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -163028923, guid: ff5d919318e91e34c938a1d250b7c815, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3749,6 +3845,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
         m_MethodName: DecreaseLeaves
@@ -3801,7 +3909,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 493, y: -236.5}
+  m_AnchoredPosition: {x: 487.4, y: -236.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3575328674938717318
@@ -3854,7 +3962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 20
   buyButton: {fileID: 3575328676154103875}
 --- !u!1 &3575328674944131577
 GameObject:
@@ -3977,7 +4085,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328674944131578}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseFlowers
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328674949920288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,7 +4231,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328674949920301}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328674957766259
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,7 +4799,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328675008287664}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseFlowers
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328675012207245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,7 +4890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x16
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4846,7 +5026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f39e4f7ed4acd8c45a80468b37278b80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f753df1cf7fe2a1458d8d9e78ee58d84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5134,7 +5314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5728,7 +5908,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -163028923, guid: ff5d919318e91e34c938a1d250b7c815, type: 3}
+  m_Sprite: {fileID: 1240879428, guid: 4e843ea66ae049147812f7a7742d76e7, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5994,7 +6174,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328675214764669}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseFlowers
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328675238262856
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,7 +6292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 16
   buyButton: {fileID: 3575328674658248331}
 --- !u!1 &3575328675275243639
 GameObject:
@@ -6287,7 +6491,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328675275993530}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328675327626427
 GameObject:
   m_ObjectHideFlags: 0
@@ -6381,7 +6609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 6
   buyButton: {fileID: 3575328675008287665}
 --- !u!1 &3575328675343856013
 GameObject:
@@ -6449,7 +6677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x18
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6536,7 +6764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3575328675355282384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6687,7 +6915,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7092,7 +7320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7174,13 +7402,14 @@ GameObject:
   - component: {fileID: 3575328675448447256}
   - component: {fileID: 3575328675448447258}
   - component: {fileID: 1445264005}
+  - component: {fileID: 1445264009}
   m_Layer: 5
   m_Name: ShopPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3575328675448447257
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7266,6 +7495,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a2adaacccaa3a48930bd1f1a850c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1445264009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328675448447262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5981ad84c99681647816fc5112aced2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &3575328675450954315
 GameObject:
   m_ObjectHideFlags: 0
@@ -7387,7 +7644,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328675450954420}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328675454327448
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,7 +7838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 3
   buyButton: {fileID: 3575328674488457449}
 --- !u!1 &3575328675614874375
 GameObject:
@@ -7626,7 +7907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f39e4f7ed4acd8c45a80468b37278b80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f753df1cf7fe2a1458d8d9e78ee58d84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7883,7 +8164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 12
   buyButton: {fileID: 3575328676248146160}
 --- !u!1 &3575328675655858741
 GameObject:
@@ -8219,7 +8500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8381,7 +8662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 4
   buyButton: {fileID: 3575328674462804387}
 --- !u!1 &3575328675691616359
 GameObject:
@@ -8450,7 +8731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f39e4f7ed4acd8c45a80468b37278b80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f753df1cf7fe2a1458d8d9e78ee58d84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8526,7 +8807,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9052,7 +9333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 18
   buyButton: {fileID: 3575328676026298745}
 --- !u!1 &3575328675886600520
 GameObject:
@@ -9716,7 +9997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 20
   buyButton: {fileID: 3575328674949920290}
 --- !u!1 &3575328675941616318
 GameObject:
@@ -9831,7 +10112,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 82, y: 27.86007}
+  m_AnchoredPosition: {x: 76, y: 27.86007}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3575328675946449413
@@ -9862,7 +10143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f39e4f7ed4acd8c45a80468b37278b80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f753df1cf7fe2a1458d8d9e78ee58d84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10015,7 +10296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x18
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10205,7 +10486,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328676026298744}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 18
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328676037119465
 GameObject:
   m_ObjectHideFlags: 0
@@ -10444,7 +10749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 8
   buyButton: {fileID: 3575328675450954421}
 --- !u!1 &3575328676110104556
 GameObject:
@@ -10778,7 +11083,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328676154103874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 14
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseFlowers
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328676167096289
 GameObject:
   m_ObjectHideFlags: 0
@@ -10845,7 +11174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x00
+  m_text: x20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11457,7 +11786,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328676248146163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3575328676333336007
 GameObject:
   m_ObjectHideFlags: 0
@@ -11704,7 +12057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buyPrice: 0
+  buyPrice: 8
   buyButton: {fileID: 3575328674944131579}
 --- !u!1 &3575328676375034743
 GameObject:
@@ -11827,4 +12180,28 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3575328676375034736}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445264009}
+        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+        m_MethodName: SpawnPlantFromIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyManager, Assembly-CSharp
+        m_MethodName: DecreaseLeaves
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
