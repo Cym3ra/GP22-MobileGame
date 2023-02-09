@@ -9,8 +9,10 @@ using System;
 [Serializable]
 public class CurrencyAmount
 {
-    public string leavesCurrency;
-    public string flowersCurrency;
+    public int leavesCurrency;
+    public int flowersCurrency;
+    public string leavesDisplay;
+    public string flowersDisplay;
 }
 
 public class CurrencyManager : MonoBehaviour
@@ -31,6 +33,11 @@ public class CurrencyManager : MonoBehaviour
         else
             
             instance = this;
+    }
+
+    private void Start()
+    {
+        FirebaseSaveManager.Instance.LoadData<CurrencyAmount>("users/" + FirebaseSignIn.Instance.GetUserID, CurrencyLoaded);
     }
 
     private void Update()
@@ -65,14 +72,33 @@ public class CurrencyManager : MonoBehaviour
         flowersText.text = "x" + flowerAmounts;
     }
 
+    private void OnEnable()
+    {
+        ACallToSave.OnSaveGame += SaveCurrency;
+    }
+    private void OnDisable()
+    {
+        ACallToSave.OnSaveGame -= SaveCurrency;
+    }
+
     public void SaveCurrency()
     {
         CurrencyAmount totalCurrency = new CurrencyAmount();
-        totalCurrency.leavesCurrency = leavesText.text;
-        totalCurrency.flowersCurrency = flowersText.text;
+        totalCurrency.leavesCurrency = leavesAmount;
+        totalCurrency.flowersCurrency = flowerAmounts;
+        totalCurrency.leavesDisplay = leavesText.text;
+        totalCurrency.flowersDisplay = flowersText.text;
 
         string jsonString = JsonUtility.ToJson(totalCurrency);
         string path = "users/" + FirebaseSignIn.Instance.GetUserID;
         FirebaseSaveManager.Instance.SaveData(path, jsonString);
+    }
+
+    private void CurrencyLoaded(CurrencyAmount currency)
+    {
+        leavesAmount = currency.leavesCurrency;
+        flowerAmounts = currency.flowersCurrency;
+        leavesText.text = currency.leavesDisplay;
+        flowersText.text = currency.flowersDisplay;
     }
 }
