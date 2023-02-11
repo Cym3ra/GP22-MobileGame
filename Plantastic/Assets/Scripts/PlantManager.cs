@@ -2,6 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+
+[Serializable]
+public class PlantSave
+{
+    public int timesWatered;
+    public int plantGrowth;
+    public Sprite[] plantSprite;
+    public Vector2 plantPos;
+}
 
 public class PlantManager : MonoBehaviour
 {
@@ -25,6 +35,7 @@ public class PlantManager : MonoBehaviour
     }
     private void Start()
     {
+        //FirebaseSaveManager.Instance.LoadData<PlantSave>("users/" + FirebaseSignIn.Instance.GetUserID, LoadPlantInfo);
         plantCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
         timer = timeToHarvest;
     }
@@ -32,6 +43,10 @@ public class PlantManager : MonoBehaviour
     void Update()
     {
         CountDown(plantPanel.GetComponent<PlantPanelController>().timerImage);
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SavePlantInfo();
+        }
     }
 
     private void OnMouseDown()
@@ -92,5 +107,35 @@ public class PlantManager : MonoBehaviour
         {
             timer = 0;
         }
+    }
+
+    private void OnEnable()
+    {
+        ACallToSave.OnSaveGame += SavePlantInfo;
+    }
+    private void OnDisable()
+    {
+        ACallToSave.OnSaveGame -= SavePlantInfo;
+    }
+
+    public void SavePlantInfo()
+    {
+        PlantSave plantInfo = new PlantSave();
+        plantInfo.timesWatered = this.wateringPressed;
+        plantInfo.plantSprite = this.plantStages;
+        plantInfo.plantGrowth = this.plantStage;
+        plantInfo.plantPos = this.gameObject.transform.position;
+
+        string jsonString = JsonUtility.ToJson(plantInfo);
+        string path = "users/" + FirebaseSignIn.Instance.GetUserID;
+        FirebaseSaveManager.Instance.SaveData(path, jsonString);
+    }
+
+    private void LoadPlantInfo(PlantSave plantSave )
+    {
+        this.wateringPressed = plantSave.timesWatered;
+        this.plantStages = plantSave.plantSprite;
+        this.plantStage = plantSave.plantGrowth;
+        this.transform.position = plantSave.plantPos;
     }
 }

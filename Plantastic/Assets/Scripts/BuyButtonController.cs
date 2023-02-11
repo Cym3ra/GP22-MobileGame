@@ -7,9 +7,17 @@ public class BuyButtonController : MonoBehaviour
 {
     public int buyPrice;
     public bool hasBought = false;
-
     [SerializeField] Button buyButton;
 
+
+    public void SpawnPlantFromIndex(int index)
+    {
+        //Instantiate(plantList[index], Vector3.zero, Quaternion.identity);
+        Vector2 spawnPoint = new Vector2(0, 0);
+        FindObjectOfType<SpawnPlant>().plantList[index].gameObject.transform.position = spawnPoint;
+        hasBought = true;
+        buyButton.GetComponent<Button>().interactable = false;
+    }
 
     private void OnEnable()
     {
@@ -24,16 +32,16 @@ public class BuyButtonController : MonoBehaviour
 
     public void CheckButtonInteractable()
     {
-        if (buyPrice <= CurrencyManager.instance.leavesAmount && !hasBought || buyPrice <= CurrencyManager.instance.flowerAmounts && !hasBought)
+        if (buyPrice <= CurrencyManager.instance.leavesAmount || buyPrice <= CurrencyManager.instance.flowerAmounts)
         {
-            buyButton.GetComponent<Button>().interactable = true;
+            if (!hasBought)
+            {
+                buyButton.GetComponent<Button>().interactable = true;
+            }
         }
         else
         {
             buyButton.GetComponent<Button>().interactable = false;
         }
     }
-
-    // TO DO check if plant has been bought, and if it has, button is non-interactable, put it in check with CheckButtonInteractable
-    // add the script to the button component, and add a button listener if clicked: hasBought is true then(check if this works)
 }

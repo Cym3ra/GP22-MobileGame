@@ -40,14 +40,6 @@ public class CurrencyManager : MonoBehaviour
         FirebaseSaveManager.Instance.LoadData<CurrencyAmount>("users/" + FirebaseSignIn.Instance.GetUserID, CurrencyLoaded);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            SaveCurrency();
-        }
-    }
-
     public void IncreaseLeaves(int amount)
     {
         leavesAmount += amount;

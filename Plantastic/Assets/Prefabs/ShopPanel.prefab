@@ -450,7 +450,6 @@ GameObject:
   - component: {fileID: 3575328674378286663}
   - component: {fileID: 3575328674378286657}
   - component: {fileID: 3575328674378286662}
-  - component: {fileID: 2008108614}
   m_Layer: 5
   m_Name: Image14
   m_TagString: Untagged
@@ -520,20 +519,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2008108614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328674378286660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 18
-  buyButton: {fileID: 3575328674635454837}
 --- !u!1 &3575328674462804385
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +531,7 @@ GameObject:
   - component: {fileID: 3575328674462804397}
   - component: {fileID: 3575328674462804386}
   - component: {fileID: 3575328674462804387}
+  - component: {fileID: 4154541629886613802}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -656,14 +642,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 4154541629886613802}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -680,6 +666,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4154541629886613802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328674462804385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 4
+  hasBought: 0
+  buyButton: {fileID: 3575328674462804387}
 --- !u!1 &3575328674463236410
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +845,7 @@ GameObject:
   - component: {fileID: 3575328674488457451}
   - component: {fileID: 3575328674488457448}
   - component: {fileID: 3575328674488457449}
+  - component: {fileID: 1898925069000609281}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -954,14 +956,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 1898925069000609281}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -978,6 +980,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1898925069000609281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328674488457455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 3
+  hasBought: 0
+  buyButton: {fileID: 3575328674488457449}
 --- !u!1 &3575328674506760669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,6 +2295,7 @@ GameObject:
   - component: {fileID: 3575328674635454839}
   - component: {fileID: 3575328674635454836}
   - component: {fileID: 3575328674635454837}
+  - component: {fileID: 8208857436420647169}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2388,14 +2406,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 8208857436420647169}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 13
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2412,6 +2430,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8208857436420647169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328674635454731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 18
+  hasBought: 0
+  buyButton: {fileID: 3575328674635454837}
 --- !u!1 &3575328674638599766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,6 +2534,7 @@ GameObject:
   - component: {fileID: 3575328674658248437}
   - component: {fileID: 3575328674658248330}
   - component: {fileID: 3575328674658248331}
+  - component: {fileID: 1339370318739956797}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2611,14 +2645,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 1339370318739956797}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2635,6 +2669,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1339370318739956797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328674658248329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 16
+  hasBought: 0
+  buyButton: {fileID: 3575328674658248331}
 --- !u!1 &3575328674704690117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,7 +2771,6 @@ GameObject:
   - component: {fileID: 3575328674731363413}
   - component: {fileID: 3575328674731363415}
   - component: {fileID: 3575328674731363412}
-  - component: {fileID: 974977166}
   m_Layer: 5
   m_Name: Image6
   m_TagString: Untagged
@@ -2792,20 +2840,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &974977166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328674731363434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 10
-  buyButton: {fileID: 3575328675275993531}
 --- !u!1 &3575328674737001173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,7 +3139,6 @@ GameObject:
   - component: {fileID: 3575328674839419560}
   - component: {fileID: 3575328674839419562}
   - component: {fileID: 3575328674839419563}
-  - component: {fileID: 463425729}
   m_Layer: 5
   m_Name: Image3
   m_TagString: Untagged
@@ -3175,20 +3208,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &463425729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328674839419561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 5
-  buyButton: {fileID: 3575328676375034737}
 --- !u!1 &3575328674877972292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3219,6 @@ GameObject:
   - component: {fileID: 3575328674877972295}
   - component: {fileID: 3575328674877972289}
   - component: {fileID: 3575328674877972294}
-  - component: {fileID: 1212947587}
   m_Layer: 5
   m_Name: Image11
   m_TagString: Untagged
@@ -3270,20 +3288,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1212947587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328674877972292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 15
-  buyButton: {fileID: 3575328675214764658}
 --- !u!1 &3575328674886340951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,6 +3739,7 @@ GameObject:
   - component: {fileID: 3575328674935319491}
   - component: {fileID: 3575328674935319488}
   - component: {fileID: 3575328674935319489}
+  - component: {fileID: 119266287223754566}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3845,14 +3850,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 119266287223754566}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3869,6 +3874,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &119266287223754566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328674935319495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 3
+  hasBought: 0
+  buyButton: {fileID: 3575328674935319489}
 --- !u!1 &3575328674938717317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3880,7 +3900,6 @@ GameObject:
   - component: {fileID: 3575328674938717316}
   - component: {fileID: 3575328674938717318}
   - component: {fileID: 3575328674938717319}
-  - component: {fileID: 456381885}
   m_Layer: 5
   m_Name: Image15
   m_TagString: Untagged
@@ -3950,20 +3969,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &456381885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328674938717317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 20
-  buyButton: {fileID: 3575328676154103875}
 --- !u!1 &3575328674944131577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,6 +3981,7 @@ GameObject:
   - component: {fileID: 3575328674944131557}
   - component: {fileID: 3575328674944131578}
   - component: {fileID: 3575328674944131579}
+  - component: {fileID: 5436496196715247317}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4086,14 +4092,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 5436496196715247317}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4110,6 +4116,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5436496196715247317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328674944131577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 8
+  hasBought: 0
+  buyButton: {fileID: 3575328674944131579}
 --- !u!1 &3575328674949920288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,6 +4143,7 @@ GameObject:
   - component: {fileID: 3575328674949920300}
   - component: {fileID: 3575328674949920301}
   - component: {fileID: 3575328674949920290}
+  - component: {fileID: 1154051592509866729}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -4232,14 +4254,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 1154051592509866729}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4256,6 +4278,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1154051592509866729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328674949920288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 20
+  hasBought: 0
+  buyButton: {fileID: 3575328674949920290}
 --- !u!1 &3575328674957766259
 GameObject:
   m_ObjectHideFlags: 0
@@ -4690,6 +4727,7 @@ GameObject:
   - component: {fileID: 3575328675008287667}
   - component: {fileID: 3575328675008287664}
   - component: {fileID: 3575328675008287665}
+  - component: {fileID: 2319492177472070143}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -4800,14 +4838,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 2319492177472070143}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4824,6 +4862,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2319492177472070143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328675008287671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 6
+  hasBought: 0
+  buyButton: {fileID: 3575328675008287665}
 --- !u!1 &3575328675012207245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5758,7 +5811,6 @@ GameObject:
   - component: {fileID: 3575328675174309896}
   - component: {fileID: 3575328675174309898}
   - component: {fileID: 3575328675174309899}
-  - component: {fileID: 486624255}
   m_Layer: 5
   m_Name: Image1
   m_TagString: Untagged
@@ -5828,20 +5880,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &486624255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328675174309897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 3
-  buyButton: {fileID: 3575328674935319489}
 --- !u!1 &3575328675180014462
 GameObject:
   m_ObjectHideFlags: 0
@@ -6065,6 +6103,7 @@ GameObject:
   - component: {fileID: 3575328675214764668}
   - component: {fileID: 3575328675214764669}
   - component: {fileID: 3575328675214764658}
+  - component: {fileID: 4732720418293127451}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -6175,14 +6214,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 4732720418293127451}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6199,6 +6238,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4732720418293127451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328675214764656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 15
+  hasBought: 0
+  buyButton: {fileID: 3575328675214764658}
 --- !u!1 &3575328675238262856
 GameObject:
   m_ObjectHideFlags: 0
@@ -6210,7 +6264,6 @@ GameObject:
   - component: {fileID: 3575328675238262859}
   - component: {fileID: 3575328675238262965}
   - component: {fileID: 3575328675238262858}
-  - component: {fileID: 1909796966}
   m_Layer: 5
   m_Name: Image13
   m_TagString: Untagged
@@ -6280,20 +6333,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1909796966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328675238262856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 16
-  buyButton: {fileID: 3575328674658248331}
 --- !u!1 &3575328675275243639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,6 +6421,7 @@ GameObject:
   - component: {fileID: 3575328675275993509}
   - component: {fileID: 3575328675275993530}
   - component: {fileID: 3575328675275993531}
+  - component: {fileID: 1702255431983010827}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -6492,14 +6532,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 1702255431983010827}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6516,6 +6556,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1702255431983010827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328675275993529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 10
+  hasBought: 0
+  buyButton: {fileID: 3575328675275993531}
 --- !u!1 &3575328675327626427
 GameObject:
   m_ObjectHideFlags: 0
@@ -6527,7 +6582,6 @@ GameObject:
   - component: {fileID: 3575328675327626426}
   - component: {fileID: 3575328675327626404}
   - component: {fileID: 3575328675327626405}
-  - component: {fileID: 1933072522}
   m_Layer: 5
   m_Name: Image7
   m_TagString: Untagged
@@ -6597,20 +6651,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1933072522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328675327626427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 6
-  buyButton: {fileID: 3575328675008287665}
 --- !u!1 &3575328675343856013
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,7 +6804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3575328675355282384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7409,7 +7449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3575328675448447257
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7535,6 +7575,7 @@ GameObject:
   - component: {fileID: 3575328675450954423}
   - component: {fileID: 3575328675450954420}
   - component: {fileID: 3575328675450954421}
+  - component: {fileID: 6373590229698352349}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -7645,14 +7686,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 6373590229698352349}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7669,6 +7710,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6373590229698352349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328675450954315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 8
+  hasBought: 0
+  buyButton: {fileID: 3575328675450954421}
 --- !u!1 &3575328675454327448
 GameObject:
   m_ObjectHideFlags: 0
@@ -7757,7 +7813,6 @@ GameObject:
   - component: {fileID: 3575328675482387818}
   - component: {fileID: 3575328675482387796}
   - component: {fileID: 3575328675482387797}
-  - component: {fileID: 808879607}
   m_Layer: 5
   m_Name: Image2
   m_TagString: Untagged
@@ -7826,20 +7881,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &808879607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328675482387819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 3
-  buyButton: {fileID: 3575328674488457449}
 --- !u!1 &3575328675614874375
 GameObject:
   m_ObjectHideFlags: 0
@@ -8165,6 +8206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyPrice: 12
+  hasBought: 0
   buyButton: {fileID: 3575328676248146160}
 --- !u!1 &3575328675655858741
 GameObject:
@@ -8580,7 +8622,6 @@ GameObject:
   - component: {fileID: 3575328675684318959}
   - component: {fileID: 3575328675684318953}
   - component: {fileID: 3575328675684318958}
-  - component: {fileID: 271381347}
   m_Layer: 5
   m_Name: Image4
   m_TagString: Untagged
@@ -8650,20 +8691,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &271381347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328675684318956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 4
-  buyButton: {fileID: 3575328674462804387}
 --- !u!1 &3575328675691616359
 GameObject:
   m_ObjectHideFlags: 0
@@ -9251,7 +9278,6 @@ GameObject:
   - component: {fileID: 3575328675864697408}
   - component: {fileID: 3575328675864697410}
   - component: {fileID: 3575328675864697411}
-  - component: {fileID: 600167739}
   m_Layer: 5
   m_Name: Image12
   m_TagString: Untagged
@@ -9321,20 +9347,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &600167739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328675864697409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 18
-  buyButton: {fileID: 3575328676026298745}
 --- !u!1 &3575328675886600520
 GameObject:
   m_ObjectHideFlags: 0
@@ -9915,7 +9927,6 @@ GameObject:
   - component: {fileID: 3575328675940731092}
   - component: {fileID: 3575328675940731094}
   - component: {fileID: 3575328675940731095}
-  - component: {fileID: 1666573880}
   m_Layer: 5
   m_Name: Image10
   m_TagString: Untagged
@@ -9985,20 +9996,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1666573880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328675940731093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 20
-  buyButton: {fileID: 3575328674949920290}
 --- !u!1 &3575328675941616318
 GameObject:
   m_ObjectHideFlags: 0
@@ -10377,6 +10374,7 @@ GameObject:
   - component: {fileID: 3575328676026298747}
   - component: {fileID: 3575328676026298744}
   - component: {fileID: 3575328676026298745}
+  - component: {fileID: 663154618368849241}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -10487,14 +10485,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 663154618368849241}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 11
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10511,6 +10509,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &663154618368849241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328676026298751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 18
+  hasBought: 0
+  buyButton: {fileID: 3575328676026298745}
 --- !u!1 &3575328676037119465
 GameObject:
   m_ObjectHideFlags: 0
@@ -10667,7 +10680,6 @@ GameObject:
   - component: {fileID: 3575328676101004991}
   - component: {fileID: 3575328676101004985}
   - component: {fileID: 3575328676101004990}
-  - component: {fileID: 867777900}
   m_Layer: 5
   m_Name: Image5
   m_TagString: Untagged
@@ -10737,20 +10749,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &867777900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328676101004988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 8
-  buyButton: {fileID: 3575328675450954421}
 --- !u!1 &3575328676110104556
 GameObject:
   m_ObjectHideFlags: 0
@@ -10974,6 +10972,7 @@ GameObject:
   - component: {fileID: 3575328676154103885}
   - component: {fileID: 3575328676154103874}
   - component: {fileID: 3575328676154103875}
+  - component: {fileID: 3759188814313872251}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -11084,14 +11083,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 3759188814313872251}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 14
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11108,6 +11107,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3759188814313872251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328676154103873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 20
+  hasBought: 0
+  buyButton: {fileID: 3575328676154103875}
 --- !u!1 &3575328676167096289
 GameObject:
   m_ObjectHideFlags: 0
@@ -11975,7 +11989,6 @@ GameObject:
   - component: {fileID: 3575328676373107907}
   - component: {fileID: 3575328676373107917}
   - component: {fileID: 3575328676373107906}
-  - component: {fileID: 497964394}
   m_Layer: 5
   m_Name: Image9
   m_TagString: Untagged
@@ -12045,20 +12058,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &497964394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575328676373107904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buyPrice: 8
-  buyButton: {fileID: 3575328674944131579}
 --- !u!1 &3575328676375034743
 GameObject:
   m_ObjectHideFlags: 0
@@ -12071,6 +12070,7 @@ GameObject:
   - component: {fileID: 3575328676375034739}
   - component: {fileID: 3575328676375034736}
   - component: {fileID: 3575328676375034737}
+  - component: {fileID: 3208291214244120053}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -12181,14 +12181,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1445264009}
-        m_TargetAssemblyTypeName: SpawnPlant, Assembly-CSharp
+      - m_Target: {fileID: 3208291214244120053}
+        m_TargetAssemblyTypeName: BuyButtonController, Assembly-CSharp
         m_MethodName: SpawnPlantFromIndex
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -12205,3 +12205,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3208291214244120053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575328676375034743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f8019aa0b05d64d97163bf85fddf5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buyPrice: 5
+  hasBought: 0
+  buyButton: {fileID: 3575328676375034737}
