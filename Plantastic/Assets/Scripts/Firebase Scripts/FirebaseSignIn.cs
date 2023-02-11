@@ -3,12 +3,16 @@ using UnityEngine.SceneManagement;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Extensions;
+using TMPro;
+using System.Collections;
 
 public class FirebaseSignIn : MonoBehaviour
 {
     //Singleton variables
     private static FirebaseSignIn _instance;
     public static FirebaseSignIn Instance { get { return _instance; } }
+
+    public TextMeshProUGUI confirmText;
 
     FirebaseAuth auth;
     //We often need our userID, create a easy way to get it.
@@ -52,14 +56,16 @@ public class FirebaseSignIn : MonoBehaviour
             {
                 //We are already logged in
                 //the program will remember us
-                Debug.Log(auth.CurrentUser.Email + " is logged in.");
-                PlayerIsSignedInLoadNextScene();
+                //Debug.Log(auth.CurrentUser.Email + " is logged in.");
+                confirmText.text = auth.CurrentUser.Email + "logging in!";
+                StartCoroutine(PlayerIsSignedInLoadNextScene());
             }
         });
     }
 
-    private void PlayerIsSignedInLoadNextScene()
+    IEnumerator PlayerIsSignedInLoadNextScene()
     {
+        yield return new WaitForSecondsRealtime(5f);
         //playButton.interactable = true;
         SceneManager.LoadScene(1);
     }
@@ -78,7 +84,7 @@ public class FirebaseSignIn : MonoBehaviour
                     newUser.DisplayName, newUser.UserId);
 
                 //playButton.interactable = true;
-                PlayerIsSignedInLoadNextScene();
+                StartCoroutine(PlayerIsSignedInLoadNextScene());
             }
         });
     }
@@ -97,8 +103,8 @@ public class FirebaseSignIn : MonoBehaviour
                 Debug.LogFormat("User signed in successfully: {0} ({1})",
                   newUser.DisplayName, newUser.UserId);
                 //status.text = newUser.Email + "is signed in";
-
-                PlayerIsSignedInLoadNextScene();
+                confirmText.text = "Sign in successful!";
+                StartCoroutine(PlayerIsSignedInLoadNextScene());
             }
         });
     }
@@ -120,9 +126,9 @@ public class FirebaseSignIn : MonoBehaviour
                 FirebaseUser newUser = task.Result;
                 Debug.LogFormat("User Registerd: {0} ({1})",
                   newUser.DisplayName, newUser.UserId);
-
+                confirmText.text = "New user registered!";
                 //playButton.interactable = true;
-                PlayerIsSignedInLoadNextScene();
+                StartCoroutine(PlayerIsSignedInLoadNextScene());
             }
         });
     }
