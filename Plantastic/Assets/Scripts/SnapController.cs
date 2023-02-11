@@ -8,6 +8,7 @@ public class SnapController : MonoBehaviour
     [SerializeField] List<Transform> snapPoints;
     [SerializeField] List<Draggable> draggableObjects;
     [SerializeField] float snapRange = 0.6f;
+    [SerializeField] AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class SnapController : MonoBehaviour
         if (closestSnapPoint != null && closestDistance <= snapRange)
         {
             draggable.transform.localPosition = closestSnapPoint.localPosition;
+            audioSource.Play();
         }
     }
 }
