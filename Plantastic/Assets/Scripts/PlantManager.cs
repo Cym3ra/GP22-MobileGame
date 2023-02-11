@@ -53,6 +53,7 @@ public class PlantManager : MonoBehaviour
     {
         plantPanel.GetComponent<CanvasGroup>().enabled = false;
         plantPanel.GetComponent<PlantPanelController>().currentPlant = this;
+        GetComponent<Animator>().SetTrigger("PlantPressed");
     }
 
     public void Watering()
