@@ -83,7 +83,7 @@ public class CurrencyManager : MonoBehaviour
 
         string jsonString = JsonUtility.ToJson(totalCurrency);
         string path = "users/" + FirebaseSignIn.Instance.GetUserID;
-        FirebaseSaveManager.Instance.SaveData(path, jsonString);
+        FirebaseSaveManager.Instance.PushData(path, jsonString);
     }
 
     private void CurrencyLoaded(CurrencyAmount currency)

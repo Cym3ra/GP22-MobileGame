@@ -110,14 +110,14 @@ public class PlantManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
+    /*private void OnEnable()
     {
         ACallToSave.OnSaveGame += SavePlantInfo;
     }
     private void OnDisable()
     {
         ACallToSave.OnSaveGame -= SavePlantInfo;
-    }
+    }*/
 
     public void SavePlantInfo()
     {
