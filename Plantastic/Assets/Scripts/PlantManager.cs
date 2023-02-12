@@ -9,8 +9,8 @@ public class PlantSave
 {
     public int timesWatered;
     public int plantGrowth;
-    public Sprite[] plantSprite;
     public Vector2 plantPos;
+    public Sprite savedPlant;
 }
 
 public class PlantManager : MonoBehaviour
@@ -42,7 +42,6 @@ public class PlantManager : MonoBehaviour
 
     void Update()
     {
-        CountDown(plantPanel.GetComponent<PlantPanelController>().timerImage);
         if (Input.GetKeyDown(KeyCode.K))
         {
             SavePlantInfo();
@@ -121,10 +120,10 @@ public class PlantManager : MonoBehaviour
 
     public void SavePlantInfo()
     {
+        plant.sprite = plantStages[plantStage];
         PlantSave plantInfo = new PlantSave();
         plantInfo.timesWatered = this.wateringPressed;
-        plantInfo.plantSprite = this.plantStages;
-        plantInfo.plantGrowth = this.plantStage;
+        plantInfo.savedPlant = plant.sprite;
         plantInfo.plantPos = this.gameObject.transform.position;
 
         string jsonString = JsonUtility.ToJson(plantInfo);
@@ -134,9 +133,9 @@ public class PlantManager : MonoBehaviour
 
     private void LoadPlantInfo(PlantSave plantSave )
     {
-        this.wateringPressed = plantSave.timesWatered;
-        this.plantStages = plantSave.plantSprite;
-        this.plantStage = plantSave.plantGrowth;
-        this.transform.position = plantSave.plantPos;
+        plant.sprite = plantSave.savedPlant;
+        wateringPressed = plantSave.timesWatered;
+        plant.sprite = plantStages[plantStage];
+        transform.position = plantSave.plantPos;
     }
 }
