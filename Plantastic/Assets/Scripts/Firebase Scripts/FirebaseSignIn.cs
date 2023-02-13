@@ -65,7 +65,7 @@ public class FirebaseSignIn : MonoBehaviour
 
     IEnumerator PlayerIsSignedInLoadNextScene()
     {
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(3f);
         //playButton.interactable = true;
         SceneManager.LoadScene(1);
     }
