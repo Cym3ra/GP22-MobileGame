@@ -58,6 +58,7 @@ public class FirebaseSignIn : MonoBehaviour
                 //the program will remember us
                 //Debug.Log(auth.CurrentUser.Email + " is logged in.");
                 confirmText.text = auth.CurrentUser.Email + "logging in!";
+                confirmText.text = "logging in!";
                 StartCoroutine(PlayerIsSignedInLoadNextScene());
             }
         });

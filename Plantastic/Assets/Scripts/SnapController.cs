@@ -7,7 +7,7 @@ public class SnapController : MonoBehaviour
 
     [SerializeField] List<Transform> snapPoints;
     [SerializeField] List<Draggable> draggableObjects;
-    [SerializeField] float snapRange = 0.6f;
+    [SerializeField] float snapRange = 1f;
     [SerializeField] AudioSource audioSource;
 
     // Start is called before the first frame update
