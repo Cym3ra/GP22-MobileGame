@@ -8,7 +8,8 @@ public class PlantPanelController : MonoBehaviour
 
     [SerializeField] Button waterButton;
     [SerializeField] Button harvestButton;
-    public Image timerImage;
+    public Image harvestTimerImage;
+    public Image waterTimerImage;
 
     public PlantManager currentPlant;
 

@@ -69,6 +69,7 @@ public class FirebaseSignIn : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
         //playButton.interactable = true;
         SceneManager.LoadScene(1);
+        FindObjectOfType<SoundManager>().gameObject.GetComponent<SoundManager>().StartGameMusic();
     }
 
     private void AnonymousSignIn()

@@ -25,4 +25,13 @@ public class SoundManager : MonoBehaviour
     {
         effectSource.PlayOneShot(clip);
     }
+
+    public void StopGameMusic()
+    {
+        musicSource.Stop();
+    }
+    public void StartGameMusic()
+    {
+        musicSource.Play();
+    }
 }

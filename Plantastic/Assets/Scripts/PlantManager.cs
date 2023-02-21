@@ -40,14 +40,6 @@ public class PlantManager : MonoBehaviour
         timer = timeToHarvest;
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            SavePlantInfo();
-        }
-    }
-
     private void OnMouseDown()
     {
         plantPanel.GetComponent<CanvasGroup>().enabled = false;
@@ -94,19 +86,6 @@ public class PlantManager : MonoBehaviour
     {
         CurrencyManager.instance.IncreaseLeaves(harvestLeavesAmount);
         CurrencyManager.instance.IncreaseFlowers(harvestFlowersAmount);
-    }
-
-    public void CountDown(Image fillImage)
-    {
-        if (timer > 0)
-        {
-            timer -= Time.deltaTime;
-            fillImage.fillAmount = timer / timeToHarvest;
-        }
-        if (timer < 0)
-        {
-            timer = 0;
-        }
     }
 
     /*private void OnEnable()
