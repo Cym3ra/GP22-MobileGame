@@ -66,10 +66,10 @@ public class FirebaseSignIn : MonoBehaviour
 
     IEnumerator PlayerIsSignedInLoadNextScene()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(1f);
         //playButton.interactable = true;
+
         SceneManager.LoadScene(1);
-        FindObjectOfType<SoundManager>().gameObject.GetComponent<SoundManager>().StartGameMusic();
     }
 
     private void AnonymousSignIn()
@@ -106,7 +106,8 @@ public class FirebaseSignIn : MonoBehaviour
                   newUser.DisplayName, newUser.UserId);
                 //status.text = newUser.Email + "is signed in";
                 confirmText.text = "Sign in successful!";
-                StartCoroutine(PlayerIsSignedInLoadNextScene());
+                PlayerIsSignedInLoadNextScene();
+                //StartCoroutine(PlayerIsSignedInLoadNextScene());
             }
         });
     }

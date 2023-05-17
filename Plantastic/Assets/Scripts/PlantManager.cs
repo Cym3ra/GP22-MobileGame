@@ -8,19 +8,13 @@ using System;
 public class PlantSave
 {
     public int timesWatered;
-    public int plantGrowth;
     public Vector2 plantPos;
-    public Sprite savedPlant;
+    public int plantStage;
 }
 
 public class PlantManager : MonoBehaviour
 {
-
     [SerializeField] Sprite[] plantStages;
-    [SerializeField] SpriteRenderer plant;
-    BoxCollider2D plantCollider;
-
-    public GameObject plantPanel;
     public int harvestLeavesAmount;
     public int harvestFlowersAmount;
     public int plantStage = 0;
@@ -28,16 +22,24 @@ public class PlantManager : MonoBehaviour
     public float timeToHarvest = 10f;
     public float timer;
 
+    SpriteRenderer plant;
+    BoxCollider2D plantCollider;
+    GameObject plantPanel;
+
     void Awake()
     {
         plantPanel = GameObject.Find("PlantPanel");
-
+        plant = transform.GetChild(0).GetComponent<SpriteRenderer>();
     }
+
     private void Start()
     {
         //FirebaseSaveManager.Instance.LoadData<PlantSave>("users/" + FirebaseSignIn.Instance.GetUserID, LoadPlantInfo);
         plantCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
         timer = timeToHarvest;
+
+        string path = "users/" + FirebaseSignIn.Instance.GetUserID + "/plants/" + gameObject.name;
+        FirebaseSaveManager.Instance.LoadData<PlantSave>(path, LoadPlantInfo);
     }
 
     private void OnMouseDown()
@@ -88,33 +90,32 @@ public class PlantManager : MonoBehaviour
         CurrencyManager.instance.IncreaseFlowers(harvestFlowersAmount);
     }
 
-    /*private void OnEnable()
+    private void OnEnable()
     {
         ACallToSave.OnSaveGame += SavePlantInfo;
     }
+
     private void OnDisable()
     {
         ACallToSave.OnSaveGame -= SavePlantInfo;
-    }*/
+    }
 
     public void SavePlantInfo()
     {
-        plant.sprite = plantStages[plantStage];
         PlantSave plantInfo = new PlantSave();
         plantInfo.timesWatered = this.wateringPressed;
-        plantInfo.savedPlant = plant.sprite;
+        plantInfo.plantStage = plantStage;
         plantInfo.plantPos = this.gameObject.transform.position;
 
         string jsonString = JsonUtility.ToJson(plantInfo);
-        string path = "users/" + FirebaseSignIn.Instance.GetUserID;
+        string path = "users/" + FirebaseSignIn.Instance.GetUserID + "/plants/" + gameObject.name;
         FirebaseSaveManager.Instance.SaveData(path, jsonString);
     }
 
     private void LoadPlantInfo(PlantSave plantSave )
     {
-        plant.sprite = plantSave.savedPlant;
         wateringPressed = plantSave.timesWatered;
-        plant.sprite = plantStages[plantStage];
+        plant.sprite = plantStages[plantSave.plantStage];
         transform.position = plantSave.plantPos;
     }
 }

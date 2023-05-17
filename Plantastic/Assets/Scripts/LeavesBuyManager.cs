@@ -20,9 +20,9 @@ public class LeavesBuyManager : MonoBehaviour
 
     private void Start()
     {
-        buyButton.onClick.AddListener(CheckPlantBought);
+        //buyButton.onClick.AddListener(CheckPlantBought);
 
-        FirebaseSaveManager.Instance.LoadData<CheckIfBought>("users/" + FirebaseSignIn.Instance.GetUserID, LoadIfPlantBought);
+        //FirebaseSaveManager.Instance.LoadData<CheckIfBought>("users/" + FirebaseSignIn.Instance.GetUserID, LoadIfPlantBought);
     }
 
     public void SpawnPlantFromIndex(int index)

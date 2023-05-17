@@ -37,7 +37,7 @@ public class CurrencyManager : MonoBehaviour
 
     private void Start()
     {
-        FirebaseSaveManager.Instance.LoadData<CurrencyAmount>("users/" + FirebaseSignIn.Instance.GetUserID, CurrencyLoaded);
+        FirebaseSaveManager.Instance.LoadData<CurrencyAmount>("users/" + FirebaseSignIn.Instance.GetUserID + "/money", CurrencyLoaded);
     }
 
     public void IncreaseLeaves(int amount)
@@ -82,8 +82,8 @@ public class CurrencyManager : MonoBehaviour
         totalCurrency.flowersDisplay = flowersText.text;
 
         string jsonString = JsonUtility.ToJson(totalCurrency);
-        string path = "users/" + FirebaseSignIn.Instance.GetUserID;
-        FirebaseSaveManager.Instance.PushData(path, jsonString);
+        string path = "users/" + FirebaseSignIn.Instance.GetUserID + "/money";
+        FirebaseSaveManager.Instance.SaveData(path, jsonString);
     }
 
     private void CurrencyLoaded(CurrencyAmount currency)

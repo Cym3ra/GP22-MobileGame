@@ -18,9 +18,9 @@ public class FlowerBuyManager : MonoBehaviour
 
     private void Start()
     {
-        buyButton.onClick.AddListener(CheckFlowerBought);
+        //buyButton.onClick.AddListener(CheckFlowerBought);
 
-        FirebaseSaveManager.Instance.LoadData<BoughtFlower>("users/" + FirebaseSignIn.Instance.GetUserID, LoadIfFlowerBought);
+        //FirebaseSaveManager.Instance.LoadData<BoughtFlower>("users/" + FirebaseSignIn.Instance.GetUserID, LoadIfFlowerBought);
     }
 
     public void SpawnPlantFromIndex(int index)
