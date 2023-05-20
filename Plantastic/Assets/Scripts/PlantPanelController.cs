@@ -26,7 +26,7 @@ public class PlantPanelController : MonoBehaviour
 
     public void WateringInput()
     {
-        currentPlant.Watering();
+        currentPlant.PressToWater();
     }
 
     public void HarvestInput()

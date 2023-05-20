@@ -22,6 +22,7 @@ public class PlantManager : MonoBehaviour
     public float timeToHarvest = 10f;
     public float timer;
 
+    float gameTime = 5f;
     SpriteRenderer plant;
     BoxCollider2D plantCollider;
     GameObject plantPanel;
@@ -49,8 +50,23 @@ public class PlantManager : MonoBehaviour
         GetComponent<Animator>().SetTrigger("PlantPressed");
     }
 
-    public void Watering()
+    public void PressToWater()
     {
+        StartCoroutine(Watering());
+    }
+
+    public IEnumerator Watering()
+    {
+
+        timer = gameTime;
+
+        do
+        {
+            timer -= Time.deltaTime;
+            yield return null;
+
+        } while (timer > 0);
+
         PlantInteraction(1);
     }
 
