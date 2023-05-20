@@ -15,6 +15,7 @@ public class PlantSave
 public class PlantManager : MonoBehaviour
 {
     [SerializeField] Sprite[] plantStages;
+    [SerializeField] Image waterTimerImage;
     public int harvestLeavesAmount;
     public int harvestFlowersAmount;
     public int plantStage = 0;
@@ -50,11 +51,6 @@ public class PlantManager : MonoBehaviour
         GetComponent<Animator>().SetTrigger("PlantPressed");
     }
 
-    public void PressToWater()
-    {
-        StartCoroutine(Watering());
-    }
-
     public IEnumerator Watering()
     {
 
@@ -63,6 +59,7 @@ public class PlantManager : MonoBehaviour
         do
         {
             timer -= Time.deltaTime;
+            waterTimerImage.fillAmount = timer / gameTime;
             yield return null;
 
         } while (timer > 0);
