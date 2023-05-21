@@ -51,15 +51,16 @@ public class PlantManager : MonoBehaviour
         GetComponent<Animator>().SetTrigger("PlantPressed");
     }
 
-    public IEnumerator Watering()
+    public IEnumerator Watering(Image waterImg)
     {
+
 
         timer = gameTime;
 
         do
         {
             timer -= Time.deltaTime;
-            waterTimerImage.fillAmount = timer / gameTime;
+            waterImg.fillAmount = timer / gameTime;
             yield return null;
 
         } while (timer > 0);

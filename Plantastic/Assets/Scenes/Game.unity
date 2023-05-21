@@ -5960,6 +5960,14 @@ PrefabInstance:
       propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1004170806, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
+      propertyPath: waterTimerImage
+      value: 
+      objectReference: {fileID: 209105276}
+    - target: {fileID: 1004170806, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
+      propertyPath: harvestTimerImage
+      value: 
+      objectReference: {fileID: 209105277}
     - target: {fileID: 3204449602808901685, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -6365,6 +6373,17 @@ PrefabInstance:
 --- !u!114 &209105276 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7487731821975193520, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
+  m_PrefabInstance: {fileID: 209105275}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &209105277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4968966235730201353, guid: 2a0df576c29be5e43acef8d6fc86245c, type: 3}
   m_PrefabInstance: {fileID: 209105275}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

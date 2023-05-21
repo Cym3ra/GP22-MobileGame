@@ -26,7 +26,7 @@ public class PlantPanelController : MonoBehaviour
 
     public void WateringInput()
     {
-        StartCoroutine(currentPlant.Watering());
+        StartCoroutine(currentPlant.Watering(waterTimerImage));
     }
 
     public void HarvestInput()
