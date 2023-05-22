@@ -53,7 +53,7 @@ public class PlantManager : MonoBehaviour
 
     public IEnumerator Watering(Image waterImg)
     {
-
+        PlantInteraction(1);
 
         timer = gameTime;
 
@@ -64,8 +64,6 @@ public class PlantManager : MonoBehaviour
             yield return null;
 
         } while (timer > 0);
-
-        PlantInteraction(1);
     }
 
     private void PlantInteraction(int watered)

@@ -21,7 +21,7 @@ public class PlantPanelController : MonoBehaviour
 
     void Update()
     {
-
+        
     }
 
     public void WateringInput()
