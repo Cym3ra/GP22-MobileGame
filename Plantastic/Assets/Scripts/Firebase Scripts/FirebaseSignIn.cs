@@ -5,6 +5,7 @@ using Firebase.Auth;
 using Firebase.Extensions;
 using TMPro;
 using System.Collections;
+using System;
 
 public class FirebaseSignIn : MonoBehaviour
 {
@@ -15,8 +16,10 @@ public class FirebaseSignIn : MonoBehaviour
     public TextMeshProUGUI confirmText;
 
     FirebaseAuth auth;
+    string roomID;
     //We often need our userID, create a easy way to get it.
     public string GetUserID { get { return auth.CurrentUser.UserId; } }
+    public string GetUserRoomID { get { return roomID; } }
 
     private void Awake()
     {
@@ -59,15 +62,32 @@ public class FirebaseSignIn : MonoBehaviour
                 //Debug.Log(auth.CurrentUser.Email + " is logged in.");
                 confirmText.text = auth.CurrentUser.Email + "logging in!";
                 confirmText.text = "logging in!";
-                StartCoroutine(PlayerIsSignedInLoadNextScene());
+                PlayerIsSignedInLoadNextScene();
             }
         });
     }
 
-    IEnumerator PlayerIsSignedInLoadNextScene()
+    private void PlayerIsSignedInLoadNextScene()
     {
-        yield return new WaitForSecondsRealtime(1f);
         //playButton.interactable = true;
+
+        //try to load room id
+        //Get our room number if we dont have one, create it.
+        FirebaseSaveManager.Instance.LoadSingleData("users/" + GetUserID + "/roomID", RoomIDLoaded);
+        
+    }
+
+    private void RoomIDLoaded(string loadedRoomID)
+    {
+        roomID = loadedRoomID;
+
+        if (roomID == null || roomID == "")
+        {
+            roomID = FirebaseSaveManager.Instance.GetPushKey("users/");
+            FirebaseSaveManager.Instance.SaveSingleData("users/" + GetUserID +"/roomID", roomID);
+        }
+
+        //then use room number for loading and saving our room.
 
         SceneManager.LoadScene(1);
     }
@@ -86,7 +106,7 @@ public class FirebaseSignIn : MonoBehaviour
                     newUser.DisplayName, newUser.UserId);
 
                 //playButton.interactable = true;
-                StartCoroutine(PlayerIsSignedInLoadNextScene());
+                PlayerIsSignedInLoadNextScene();
             }
         });
     }
@@ -107,7 +127,6 @@ public class FirebaseSignIn : MonoBehaviour
                 //status.text = newUser.Email + "is signed in";
                 confirmText.text = "Sign in successful!";
                 PlayerIsSignedInLoadNextScene();
-                //StartCoroutine(PlayerIsSignedInLoadNextScene());
             }
         });
     }
@@ -131,7 +150,7 @@ public class FirebaseSignIn : MonoBehaviour
                   newUser.DisplayName, newUser.UserId);
                 confirmText.text = "New user registered!";
                 //playButton.interactable = true;
-                StartCoroutine(PlayerIsSignedInLoadNextScene());
+                PlayerIsSignedInLoadNextScene();
             }
         });
     }

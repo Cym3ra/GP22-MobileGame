@@ -1,5 +1,6 @@
 using Firebase.Database;
 using Firebase.Extensions;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,6 +47,18 @@ public class FirebaseSaveManager : MonoBehaviour
         });
     }
 
+    //Returns one object that we want to load from the database
+    public void LoadSingleData(string path, OnLoadedDelegate<string> onLoadedDelegate)
+    {
+        db.RootReference.Child(path).GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.Exception != null)
+                Debug.LogWarning(task.Exception);
+
+            onLoadedDelegate(task.Result.GetRawJsonValue());
+        });
+    }
+
     //Returns one list of objects that we want to load from the database
     public void LoadMultipleData<T>(string path, OnLoadedMultipleDelegate<T> onLoadedDelegate)
     {
@@ -62,6 +75,27 @@ public class FirebaseSaveManager : MonoBehaviour
             onLoadedDelegate(dataStuff);
         });
     }
+
+
+    //Returns one list of objects that we want to load from the database
+    public void LoadMultipleID(string path, OnLoadedMultipleDelegate<string> onLoadedDelegate)
+    {
+        db.RootReference.Child(path).GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.Exception != null)
+                Debug.LogWarning(task.Exception);
+
+            var dataStuff = new List<string>();
+
+            foreach (var item in task.Result.Children)
+            {
+                dataStuff.Add(item.Key);
+            }
+
+            onLoadedDelegate(dataStuff);
+        });
+    }
+
 
     //loads the data at "path" then returns json result to the delegate/callback function
     public void LoadHighScoreData<T>(string path, int amount, OnLoadedMultipleDelegate<T> onLoadedDelegate)
@@ -80,10 +114,28 @@ public class FirebaseSaveManager : MonoBehaviour
         });
     }
 
+    public string GetPushKey(string path)
+    {
+        return db.RootReference.Child(path).Push().Key;
+    }
+
     //Save the data at the given path, save callback optional
     public void SaveData(string path, string data, OnSaveDelegate onSaveDelegate = null)
     {
         db.RootReference.Child(path).SetRawJsonValueAsync(data).ContinueWithOnMainThread(task =>
+        {
+            if (task.Exception != null)
+                Debug.LogWarning(task.Exception);
+
+            //Call our delegate if it's not null
+            onSaveDelegate?.Invoke();
+        });
+    }
+
+    //Save the data at the given path, save callback optional
+    public void SaveSingleData(string path, string data, OnSaveDelegate onSaveDelegate = null)
+    {
+        db.RootReference.Child(path).SetValueAsync(data).ContinueWithOnMainThread(task =>
         {
             if (task.Exception != null)
                 Debug.LogWarning(task.Exception);

@@ -40,7 +40,7 @@ public class PlantManager : MonoBehaviour
         plantCollider = transform.GetChild(0).GetComponent<BoxCollider2D>();
         timer = timeToHarvest;
 
-        string path = "users/" + FirebaseSignIn.Instance.GetUserID + "/plants/" + gameObject.name;
+        string path = "rooms/" + FirebaseSignIn.Instance.GetUserRoomID + "/plants/" + gameObject.name;
         FirebaseSaveManager.Instance.LoadData<PlantSave>(path, LoadPlantInfo);
     }
 
@@ -70,22 +70,10 @@ public class PlantManager : MonoBehaviour
     {
         wateringPressed += watered;
 
-        if (plantStages[0])
+        if (wateringPressed == 2 || wateringPressed == 5)
         {
-            if (wateringPressed == 2)
-            {
-                plantStage++;
-                UpdatePlantStage();
-            }
-        }
-
-        if (plantStages[1])
-        {
-            if (wateringPressed == 5)
-            {
-                plantStage++;
-                UpdatePlantStage();
-            }
+            plantStage++;
+            UpdatePlantStage();
         }
     }
 
@@ -107,6 +95,12 @@ public class PlantManager : MonoBehaviour
         ACallToSave.OnSaveGame += SavePlantInfo;
     }
 
+    internal void LoadRoom(string roomID)
+    {
+        string path = "rooms/" + roomID + "/plants/" + gameObject.name;
+        FirebaseSaveManager.Instance.LoadData<PlantSave>(path, LoadPlantInfo);
+    }
+
     private void OnDisable()
     {
         ACallToSave.OnSaveGame -= SavePlantInfo;
@@ -120,7 +114,7 @@ public class PlantManager : MonoBehaviour
         plantInfo.plantPos = this.gameObject.transform.position;
 
         string jsonString = JsonUtility.ToJson(plantInfo);
-        string path = "users/" + FirebaseSignIn.Instance.GetUserID + "/plants/" + gameObject.name;
+        string path = "rooms/" + FirebaseSignIn.Instance.GetUserRoomID + "/plants/" + gameObject.name;
         FirebaseSaveManager.Instance.SaveData(path, jsonString);
     }
 
